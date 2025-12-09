@@ -51,3 +51,7 @@ ol {
   clip-path: inset(50%);
   white-space: nowrap;
 }
+
+.page {
+  font-family: var(--primary-font-family), sans-serif;
+}

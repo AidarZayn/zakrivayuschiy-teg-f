@@ -13,4 +13,8 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  background-image: var(--repeating-linear-gradient);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }

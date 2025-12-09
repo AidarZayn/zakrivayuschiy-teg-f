@@ -1,1 +1,11 @@
-/* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+    --primary-font-family: Inter, sans-serif;
+    --secondary-font-family: PressStart2P, monospace;
+
+    --min-width-primary-font: 410;
+    --max-width-primary-font: 715;
+
+    --repeating-linear-gradient: repeating-linear-gradient(90deg, #d3d3d3 0px, #d3d3d3 2px, transparent 2px, transparent 4px),
+    repeating-linear-gradient(to bottom, #d3d3d3 0px, #d3d3d3 2px, transparent 2px, transparent 4px),
+    linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a 100%);
+}
