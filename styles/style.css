@@ -17,4 +17,90 @@
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
+  padding: 100px 0;
+}
+
+.header {
+  height: clamp(327px, 50vh, 368px);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+}
+
+.header-title {
+  font-family: var(--secondary-font-family), monospace;
+  font-weight: 400;
+  font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+  line-height: 100%;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.header-subtitle {
+  font-family: var(--secondary-font-family), monospace;
+  font-weight: 400;
+  font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
+  line-height: 100%;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.card {
+  background-color: #fff;
+}
+
+.card-title {
+  font-family: var(--primary-font-family), sans-serif;
+  font-weight: 715;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0;
+  padding: 4px 10px;
+}
+
+.card-image {
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+}
+
+.card__body {
+  padding: 25px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 25px;
+}
+
+.card-description {
+  font-family: var(--primary-font-family), sans-serif;
+  font-weight: 410;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0;
+}
+
+.card__actions {
+  display: flex;
+  gap: 12px;
+  justify-self: end;
+}
+
+.card__like-button {
+  border: 2px solid #000;
+  height: fit-content;
+  padding: 7px;
+  width: 100%;
+  min-width: 130px;
+}
+
+.button__text {
+  font-family: var(--secondary-font-family), monospace;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 90%;
+  letter-spacing: 0;
+  margin: auto;
 }

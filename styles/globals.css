@@ -35,6 +35,17 @@ input {
   color: currentColor;
   font-family: inherit;
   font-size: inherit;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 0;
+}
+
+img {
+  object-fit: cover;
+  object-position: center;
+  block-size: 100%;
+  inline-size: 100%;
 }
 
 ul,
@@ -50,6 +61,12 @@ ol {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   white-space: nowrap;
+}
+
+.general-card-styles {
+  width: clamp(375px, 50vw, 700px);
+  margin: 0 auto;
+  border: 2px solid #000;
 }
 
 .page {
