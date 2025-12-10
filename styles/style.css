@@ -29,6 +29,13 @@
   align-items: center;
   justify-content: center;
   background-color: #fff;
+  margin-bottom: 98px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
 }
 
 .header-title {
@@ -62,9 +69,29 @@
   padding: 4px 10px;
 }
 
-.card-image {
+.card-image__wrapper {
   border-top: 2px solid #000;
   border-bottom: 2px solid #000;
+  position: relative;
+  height: clamp(371px, 100vw - 4px, 696px);
+}
+
+.card-label {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  font-family: var(--secondary-font-family), monospace;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  mix-blend-mode: hard-light;
+  text-shadow:
+          -1px 0 #ffffff87,
+          0 1px #ffffff87,
+          1px 0 #ffffff87,
+          0 -1px #ffffff87;
 }
 
 .card__body {
