@@ -18,6 +18,9 @@
   background-attachment: fixed;
   background-repeat: no-repeat;
   padding: 100px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .header {
@@ -115,12 +118,13 @@
   justify-self: end;
 }
 
-.card__like-button {
+.button {
   border: 2px solid #000;
   height: fit-content;
   padding: 7px;
   width: 100%;
   min-width: 130px;
+  background-color: #fff;
 }
 
 .button__text {
@@ -130,4 +134,82 @@
   line-height: 90%;
   letter-spacing: 0;
   margin: auto;
+}
+
+.button__icon {
+  block-size: 21px;
+  inline-size: 21px;
+}
+
+.dialog-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.dialog-button .button__text {
+  margin: 0;
+}
+
+.dialog {
+  padding: 30px;
+  border: 2px solid #000;
+  width: clamp(341px, 50vh, 353px);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.dialog[open] {
+  opacity: 1;
+}
+
+.dialog__content {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.dialog__icon {
+  block-size: 39px;
+  inline-size: 39px;
+}
+
+.dialog__text {
+  font-family: var(--secondary-font-family), monospace;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.dialog::backdrop {
+  background-color: #00000000;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.dialog[open]::backdrop {
+  background-color: #000000c7;
+}
+
+.dialog .dialog-button {
+  width: 100%;
+  margin: inherit;
+}
+
+.dialog-button {
+  width: clamp(306px, 50vh, 335px);
+  margin-top: clamp(50px, 50vh, 52px);
+}
+
+@supports((text-stroke: 1px #ffffff87) or (-webkit-text-stroke: 1px #ffffff87)) {
+  .card-label {
+    -webkit-text-stroke: 1px #ffffff87;
+    text-stroke: 1px #ffffff87;
+    text-shadow: none;
+  }
 }
