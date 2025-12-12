@@ -132,7 +132,7 @@
   position: relative;
   overflow: hidden;
   border: 2px solid #000;
-  transition: box-shadow 0.3s ease;
+  transition: box-shadow 0.3s ease, background-color 0.5s ease-in-out;
   height: fit-content;
   padding: 7px;
   width: 100%;
@@ -156,6 +156,12 @@
   transform: translateX(0);
 }
 
+.button:hover .button__text {
+  mix-blend-mode: difference;
+  transition: 0.1s step-start;
+  color: #fff;
+}
+
 .button:focus {
   outline: none;
   box-shadow: 2px 2px 0 #000;
@@ -168,10 +174,10 @@
   line-height: 90%;
   letter-spacing: 0;
   margin: auto;
-  color: #fff;
+  color: #000;
   position: relative;
   z-index: 2;
-  mix-blend-mode: difference;
+  transition: color 0.6s linear;
 }
 
 .button__icon {
@@ -184,19 +190,8 @@
 
 .button:hover .button__icon {
   mix-blend-mode: difference;
-  color: white;
   transition: 0.5s step-start;
-}
-
-.dialog-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
-}
-
-.dialog-button .button__text {
-  margin: 0;
+  color: #fff;
 }
 
 .dialog {
@@ -212,6 +207,19 @@
 
 .dialog[open] {
   opacity: 1;
+}
+
+.dialog__button {
+  width: clamp(306px, 50vh, 335px);
+  margin-top: 50px;
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  padding: 13px 20px;
+}
+
+.dialog__button .button__text {
+  margin: 0;
 }
 
 .dialog__content {
@@ -243,14 +251,22 @@
   background-color: #000000c7;
 }
 
-.dialog .dialog-button {
-  width: 100%;
-  margin: inherit;
+.open-dialog__button {
+  width: clamp(306px, 50vh, 335px);
+  margin-top: clamp(50px, 50vh, 52px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.open-dialog__button span {
+  margin: 0;
 }
 
 .dialog-button {
-  width: clamp(306px, 50vh, 335px);
-  margin-top: clamp(50px, 50vh, 52px);
+  border: 2px solid;
+  padding: 10px 5px;
 }
 
 .brightness-filter {

@@ -206,12 +206,12 @@
     </main>
     <button
             type="button"
-            class="button dialog-button"
+            class="button dialog__button"
             onclick="window['dialog-modal'].showModal();"
             aria-controls="dialog-modal"
     >
       <svg class="button__icon">
-        <use href="./svg/floppy.svg#floppy-icon"></use>
+        <use href="./svg/symbol.svg#floppy-icon"></use>
       </svg>
       <span class="button__text">Сохранить на память</span>
     </button>
@@ -220,8 +220,8 @@
         <img src="./svg/floppy.svg" alt="Дискетта" class="dialog__icon" />
         <span class="dialog__text">Вставьте дискету, чтобы продолжить</span>
       </div>
-      <button type="button" class="button dialog-button button__text" onclick="window['dialog-modal'].close();">
-        ОК
+      <button type="button" class="button" onclick="window['dialog-modal'].close();">
+        <span class="button__text">ОК</span>
       </button>
     </dialog>
     <script src="./scripts/like.js"></script>
