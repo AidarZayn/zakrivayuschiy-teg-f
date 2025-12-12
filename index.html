@@ -46,7 +46,7 @@
         <h2 class="card-title">1 спринт: Я — чистый лист</h2>
         <div class="card-image__wrapper">
           <span class="card-label">&lt;/HTML&gt;</span>
-          <img class="card-image" src="images/bus.png" alt="Автобус" />
+          <img class="card-image brightness-filter" src="images/bus.png" alt="Автобус" />
         </div>
         <div class="card__body">
           <p class="card-description">
@@ -69,7 +69,7 @@
         <h2 class="card-title">1 спринт: А если не получится?</h2>
         <div class="card-image__wrapper">
           <span class="card-label">&lt;/HTML&gt;</span>
-          <img class="card-image" src="images/bus.png" alt="Автобус" />
+          <img class="card-image saturate-filter" src="images/bus.png" alt="Автобус" />
         </div>
         <div class="card__body">
           <p class="card-description">
@@ -92,7 +92,7 @@
         <h2 class="card-title">2 спринт: Погоня за идеалом</h2>
         <div class="card-image__wrapper">
           <span class="card-label">&lt;/HTML&gt;</span>
-          <img class="card-image" src="images/bus.png" alt="Автобус" />
+          <img class="card-image hue-rotate-filter " src="images/bus.png" alt="Автобус" />
         </div>
         <div class="card__body">
           <p class="card-description">
@@ -115,7 +115,7 @@
         <h2 class="card-title">2 спринт: О тех, кто рядом</h2>
         <div class="card-image__wrapper">
           <span class="card-label">&lt;/HTML&gt;</span>
-          <img class="card-image" src="images/bus.png" alt="Автобус" />
+          <img class="card-image invert-filter" src="images/bus.png" alt="Автобус" />
         </div>
         <div class="card__body">
           <p class="card-description">
@@ -138,7 +138,7 @@
         <h2 class="card-title">3 спринт: Обходные стратегии</h2>
         <div class="card-image__wrapper">
           <span class="card-label">&lt;/HTML&gt;</span>
-          <img class="card-image" src="images/bus.png" alt="Автобус" />
+          <img class="card-image sepia-filter" src="images/bus.png" alt="Автобус" />
         </div>
         <div class="card__body">
           <p class="card-description">
@@ -161,7 +161,7 @@
         <h2 class="card-title">3 спринт: Когда опускаются руки</h2>
         <div class="card-image__wrapper">
           <span class="card-label">&lt;/HTML&gt;</span>
-          <img class="card-image" src="images/bus.png" alt="Автобус" />
+          <img class="card-image blur-filter" src="images/bus.png" alt="Автобус" />
         </div>
         <div class="card__body">
           <p class="card-description">
@@ -184,7 +184,7 @@
         <h2 class="card-title">«Сейчас я здесь»</h2>
         <div class="card-image__wrapper">
           <span class="card-label">&lt;/HTML&gt;</span>
-          <img class="card-image" src="images/bus.png" alt="Автобус" />
+          <img class="card-image retro-filter" src="images/bus.png" alt="Автобус" />
         </div>
         <div class="card__body">
           <p class="card-description">
@@ -210,7 +210,9 @@
             onclick="window['dialog-modal'].showModal();"
             aria-controls="dialog-modal"
     >
-      <img src="./svg/floppy.svg" alt="Дискетта" class="button__icon" />
+      <svg class="button__icon">
+        <use href="./svg/floppy.svg#floppy-icon"></use>
+      </svg>
       <span class="button__text">Сохранить на память</span>
     </button>
     <dialog id="dialog-modal" class="dialog">
