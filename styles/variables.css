@@ -5,6 +5,26 @@
     --min-width-primary-font: 410;
     --max-width-primary-font: 715;
 
+    --border-color: #000;
+    --text-shadow-color: #ffffff87;
+    --button-accent-color: #000;
+    --dialog-background-color: 0 0 0;
+
+    --body-fill-color: black;
+    --core-fill-color: black;
+
+    --active-body-fill-color: red;
+    --active-core-fill-color: red;
+
+    --liked-body-fill-color: red;
+    --liked-core-fill-color: red;
+    --liked-contour-fill-color: red;
+
+    --thin-font-weight: 410;
+    --fat-font-weight: 715;
+
+    --computed-width-block: clamp(375px, 50vw, 700px);
+
     --repeating-linear-gradient: repeating-linear-gradient(90deg, #d3d3d3 0px, #d3d3d3 2px, transparent 2px, transparent 4px),
     repeating-linear-gradient(to bottom, #d3d3d3 0px, #d3d3d3 2px, transparent 2px, transparent 4px),
     linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a 100%);
