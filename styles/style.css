@@ -116,17 +116,25 @@
 }
 
 .card__icon-button {
-  border: none;
-  transition: outline 0.3s ease;
+  display: flex;
+  margin: auto;
+  justify-content: start;
+  align-items: center;
+  outline: none;
+  inline-size: 40px;
+  block-size: 40px;
+  border: 2px solid transparent;
+  transition: border 0.3s ease;
+  cursor: pointer;
 }
 
 .card__icon-button:focus {
   outline: none;
-  border: none;
+  border: 2px solid transparent;
 }
 
 .card__icon-button:focus-visible {
-  outline: 2px solid var(--border-color, #000);
+  border: 2px solid var(--border-color, #000);
 }
 
 .button {
@@ -156,6 +164,11 @@
 
 .button:hover::after {
   transform: translateX(0);
+}
+
+.button:focus {
+  outline: none;
+  box-shadow: 2px 2px var(--border-color, black);
 }
 
 .button__text {
@@ -193,13 +206,18 @@
   background-color: rgb(var(--dialog-background-color, 0 0 0) / 0.75);
 }
 
+.dialog .button__text {
+  text-transform: uppercase;
+}
+
 .dialog__button {
-  width: clamp(306px, 50vw, 335px);
+  max-width: 335px;
+  width: 100%;
   margin-top: 50px;
   display: flex;
   gap: 8px;
   align-items: center;
-  padding: 15px 18px;
+  padding: 14px 17px;
 }
 
 .dialog__button .button__text {
@@ -224,19 +242,6 @@
   line-height: 150%;
   letter-spacing: 0;
   text-transform: uppercase;
-}
-
-.open-dialog__button {
-  width: clamp(306px, 50vh, 335px);
-  margin-top: clamp(50px, 50vh, 52px);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
-}
-
-.open-dialog__button span {
-  margin: 0;
 }
 
 .dialog-button {
@@ -273,7 +278,9 @@
 }
 
 .like-icon {
-  cursor: pointer;
+  overflow: visible;
+  margin: auto;
+  transform: translate(-2px, 0);
 }
 
 .heart {
@@ -363,9 +370,8 @@
   }
 
   .dialog__button {
+    max-width: 306px;
     flex-direction: column;
-    padding: 14px 18px;
-    gap: 7px;
   }
 
   .button__icon {
