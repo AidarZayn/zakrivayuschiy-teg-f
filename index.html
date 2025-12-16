@@ -298,7 +298,7 @@
             onclick="window['dialog-modal'].showModal();"
             aria-controls="dialog-modal"
     >
-      <svg class="button__icon">
+      <svg class="button__icon" fill="currentColor">
         <use href="./svg/symbol.svg#floppy-icon"></use>
       </svg>
       <span class="button__text">Сохранить на память</span>
@@ -306,10 +306,10 @@
     <dialog id="dialog-modal" class="dialog">
       <div class="dialog__content">
         <img src="./svg/floppy.svg" alt="Дискетта" class="dialog__icon" />
-        <span class="dialog__text">Вставьте дискету, чтобы продолжить</span>
+        <p class="dialog__text">Вставьте дискету, чтобы продолжить</p>
       </div>
       <button type="button" class="button" onclick="window['dialog-modal'].close();">
-        <span class="button__text">ОК</span>
+        <p class="button__text">ОК</p>
       </button>
     </dialog>
     <script src="./scripts/like.js"></script>

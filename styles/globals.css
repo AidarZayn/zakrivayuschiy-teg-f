@@ -59,12 +59,6 @@ ol {
   white-space: nowrap;
 }
 
-.general-card-styles {
-  width: var(--computed-width-block, clamp(375px, 50vw, 700px));
-  margin: 0 auto;
-  border: 2px solid var(--border-color);
-}
-
 .page {
   font-family: var(--primary-font-family), sans-serif;
 }
